@@ -20,17 +20,11 @@
         menu.classList.add('header__nav_active');
     });
     menuClose.addEventListener('click', ()=>{
-        menu.classList.remove('header__nav_active');
-        //console.log(menuLinks);
-        //console.log(window.innerWidth);
-        if (true) {
-            console.log('1');
-        }
+        menu.classList.remove('header__nav_active');       
     });
     if (window.innerWidth <= 767) {
         for (let i=0;  i < menuLinks.length; i += 1) {
             menuLinks[i].addEventListener('click', () => {
-                console.log(window.innerWidth);
                 menu.classList.remove('header__nav_active');
             });
         }
